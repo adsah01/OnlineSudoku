@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <main>
+        <form th:action="updatedPuzzel" method="POST">
+            <input class="box-layout" type="text" id="digitOne" th:value="${box.digitOne}" name="digitOne"/>
+            <input class="box-layout" type="text" id="digitTwo" th:value="${box.digitTwo}" name="digitTwo"/>
+            <input class="box-layout" type="text" id="digitThree" th:value="${box.digitThree}" name="digitThree"/>
+            <input class="box-layout" type="text" id="digitFour" th:value="${box.digitFour}" name="digitFour"/>
+            <input class="box-layout" type="text" id="digitFive" th:value="${box.digitFive}" name="digitFive"/>
+            <input class="box-layout" type="text" id="digitSix" th:value="${box.digitSix}" name="digitSix"/>
+            <input class="box-layout" type="text" id="digitSeven" th:value="${box.digitSeven}" name="digitSeven"/>
+            <input class="box-layout" type="text" id="digitEight" th:value="${box.digitEight}" name="digitEight"/>
+            <input class="box-layout" type="text" id="digitNine" th:value="${box.digitNine}" name="digitNine"/>
+            <input class="box-layout" type="text" id="digitTen" th:value="${box.digitTen}" name="digitTen"/>
+            <input class="box-layout" type="text" id="digitEleven" th:value="${box.digitEleven}" name="digitEleven"/>
+            <input class="box-layout" type="text" id="digitTwelve" th:value="${box.digitTwelve}" name="digitTwelve"/>
+            <input class="box-layout" type="text" id="digitThirteen" th:value="${box.digitThirteen}" name="digitThirteen"/>
+            <input class="box-layout" type="text" id="digitFourteen" th:value="${box.digitFourteen}" name="digitFourteen"/>
+            <input class="box-layout" type="text" id="digitFifteen" th:value="${box.digitFifteen}" name="digitFifteen"/>
+            <input class="box-layout" type="text" id="digitSixteen" th:value="${box.digitSixteen}" name="digitSixteen"/>
+            <input class="box-layout" type="text" id="digitSeventeen" th:value="${box.digitSeventeen}" name="digitSeventeen"/>
+            <input class="box-layout" type="text" id="digitEighteen" th:value="${box.digitEighteen}" name="digitEighteen"/>
+            <input class="box-layout" type="text" id="digitNineteen" th:value="${box.digitNineteen}" name="digitNineteen"/>
+            <input class="box-layout" type="text" id="digitTwenty" th:value="${box.digitTwenty}" name="digitTwenty"/>
+            <input class="box-layout" type="text" id="digitTwentyone" th:value="${box.digitTwentyone}" name="digitTwentyone"/>
+            <input class="box-layout" type="text" id="digitTwentytwo" th:value="${box.digitTwentytwo}" name="digitTwentytwo"/>
+            <input class="box-layout" type="text" id="digitTwentythree" th:value="${box.digitTwentythree}" name="digitTwentythree"/>
+            <input class="box-layout" type="text" id="digitTwentyfour" th:value="${box.digitTwentyfour}" name="digitTwentyfour"/>
+            <input class="box-layout" type="text" id="digitTwentyfive" th:value="${box.digitTwentyfive}" name="digitTwentyfive"/>
+            <input class="box-layout" type="text" id="digitTwentysix" th:value="${box.digitTwentysix}" name="digitTwentysix"/>
+            <input class="box-layout" type="text" id="digitTwentyseven" th:value="${box.digitTwentyseven}" name="digitTwentyseven"/>
+            <input class="box-layout" type="text" id="digitTwentyeight" th:value="${box.digitTwentyeight}" name="digitTwentyeight"/>
+            <input class="box-layout" type="text" id="digitTwentynine" th:value="${box.digitTwentynine}" name="digitTwentynine"/>
+            <input class="box-layout" type="text" id="digitThirty" th:value="${box.digitThirty}" name="digitThirty"/>
+            <input class="box-layout" type="text" id="digitThirtyone" th:value="${box.digitThirtyone}" name="digitThirtyone"/>
+            <input class="box-layout" type="text" id="digitThirtytwo" th:value="${box.digitThirtytwo}" name="digitThirtytwo"/>
+            <input class="box-layout" type="text" id="digitThirtythree" th:value="${box.digitThirtythree}" name="digitThirtythree"/>
+            <input class="box-layout" type="text" id="digitThirtyfour" th:value="${box.digitThirtyfour}" name="digitThirtyfour"/>
+            <input class="box-layout" type="text" id="digitThirtyfive" th:value="${box.digitThirtyfive}" name="digitThirtyfive"/>
+            <input class="box-layout" type="text" id="digitThirtysix" th:value="${box.digitThirtysix}" name="digitThirtysix"/>
+            <input class="box-layout" type="text" id="digitThirtyseven" th:value="${box.digitThirtyseven}" name="digitThirtyseven"/>
+            <input class="box-layout" type="text" id="digitThirtyeight" th:value="${box.digitThirtyeight}" name="digitThirtyeight"/>
+            <input class="box-layout" type="text" id="digitThirtynine" th:value="${box.digitThirtynine}" name="digitThirtynine"/>
+            <input class="box-layout" type="text" id="digitForty" th:value="${box.digitForty}" name="digitForty"/>
+            <input class="box-layout" type="text" id="digitFortyone" th:value="${box.digitFortyone}" name="digitFortyone"/>
+            <input class="box-layout" type="text" id="digitFortytwo" th:value="${box.digitFortytwo}" name="digitFortytwo"/>
+            <input class="box-layout" type="text" id="digitFortythree" th:value="${box.digitFortythree}" name="digitFortythree"/>
+            <input class="box-layout" type="text" id="digitFortyfour" th:value="${box.digitFortyfour}" name="digitFortyfour"/>
+            <input class="box-layout" type="text" id="digitFortyfive" th:value="${box.digitFortyfive}" name="digitFortyfive"/>
+            <input class="box-layout" type="text" id="digitFortysix" th:value="${box.digitFortysix}" name="digitFortysix"/>
+            <input class="box-layout" type="text" id="digitFortyseven" th:value="${box.digitFortyseven}" name="digitFortyseven"/>
+            <input class="box-layout" type="text" id="digitFortyeight" th:value="${box.digitFortyeight}" name="digitFortyeight"/>
+            <input class="box-layout" type="text" id="digitFortynine" th:value="${box.digitFortynine}" name="digitFortynine"/>
+            <input class="box-layout" type="text" id="digitFifty" th:value="${box.digitFifty}" name="digitFifty"/>
+            <input class="box-layout" type="text" id="digitFiftyone" th:value="${box.digitFiftyone}" name="digitFiftyone"/>
+            <input class="box-layout" type="text" id="digitFiftytwo" th:value="${box.digitFiftytwo}" name="digitFiftytwo"/>
+            <input class="box-layout" type="text" id="digitFiftythree" th:value="${box.digitFiftythree}" name="digitFiftythree"/>
+            <input class="box-layout" type="text" id="digitFiftyfour" th:value="${box.digitFiftyfour}" name="digitFiftyfour"/>
+            <input class="box-layout" type="text" id="digitFiftyfive" th:value="${box.digitFiftyfive}" name="digitFiftyfive"/>
+            <input class="box-layout" type="text" id="digitFiftysix" th:value="${box.digitFiftysix}" name="digitFiftysix"/>
+            <input class="box-layout" type="text" id="digitFiftyseven" th:value="${box.digitFiftyseven}" name="digitFiftyseven"/>
+            <input class="box-layout" type="text" id="digitFiftyeight" th:value="${box.digitFiftyeight}" name="digitFiftyeight"/>
+            <input class="box-layout" type="text" id="digitFiftynine" th:value="${box.digitFiftynine}" name="digitFiftynine"/>
+            <input class="box-layout" type="text" id="digitSixty" th:value="${box.digitSixty}" name="digitSixty"/>
+            <input class="box-layout" type="text" id="digitSixtyone" th:value="${box.digitSixtyone}" name="digitSixtyone"/>
+            <input class="box-layout" type="text" id="digitSixtytwo" th:value="${box.digitSixtytwo}" name="digitSixtytwo"/>
+            <input class="box-layout" type="text" id="digitSixtythree" th:value="${box.digitSixtythree}" name="digitSixtythree"/>
+            <input class="box-layout" type="text" id="digitSixtyfour" th:value="${box.digitSixtyfour}" name="digitSixtyfour"/>
+            <input class="box-layout" type="text" id="digitSixtyfive" th:value="${box.digitSixtyfive}" name="digitSixtyfive"/>
+            <input class="box-layout" type="text" id="digitSixtysix" th:value="${box.digitSixtysix}" name="digitSixtysix"/>
+            <input class="box-layout" type="text" id="digitSixtyseven" th:value="${box.digitSixtyseven}" name="digitSixtyseven"/>
+            <input class="box-layout" type="text" id="digitSixtyeight" th:value="${box.digitSixtyeight}" name="digitSixtyeight"/>
+            <input class="box-layout" type="text" id="digitSixtynine" th:value="${box.digitSixtynine}" name="digitSixtynine"/>
+            <input class="box-layout" type="text" id="digitSeventy" th:value="${box.digitSeventy}" name="digitSeventy"/>
+            <input class="box-layout" type="text" id="digitSeventyone" th:value="${box.digitSeventyone}" name="digitSeventyone"/>
+            <input class="box-layout" type="text" id="digitSeventytwo" th:value="${box.digitSeventytwo}" name="digitSeventytwo"/>
+            <input class="box-layout" type="text" id="digitSeventythree" th:value="${box.digitSeventythree}" name="digitSeventythree"/>
+            <input class="box-layout" type="text" id="digitSeventyfour" th:value="${box.digitSeventyfour}" name="digitSeventyfour"/>
+            <input class="box-layout" type="text" id="digitSeventyfive" th:value="${box.digitSeventyfive}" name="digitSeventyfive"/>
+            <input class="box-layout" type="text" id="digitSeventysix" th:value="${box.digitSeventysix}" name="digitSeventysix"/>
+            <input class="box-layout" type="text" id="digitSeventyseven" th:value="${box.digitSeventyseven}" name="digitSeventyseven"/>
+            <input class="box-layout" type="text" id="digitSeventyeight" th:value="${box.digitSeventyeight}" name="digitSeventyeight"/>
+            <input class="box-layout" type="text" id="digitSeventynine" th:value="${box.digitSeventynine}" name="digitSeventynine"/>
+            <input class="box-layout" type="text" id="digitEighty" th:value="${box.digitEighty}" name="digitEighty"/>
+            <input class="box-layout" type="text" id="digitEightyone" th:value="${box.digitEightyone}" name="digitEightyone"/>
+
+            <input type="submit" name="action" value="Lös min Sudoku!"/>
+            <input type="submit" name="action" value="Ge mig en ledtråd!"/>
+            <input type="submit" name="action" value="Rensa brädet"/>
+        </form>
+    </main>
+    <h1 th:text="${badBox}"></h1>
+</body>
+</html>

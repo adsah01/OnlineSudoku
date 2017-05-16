@@ -1,0 +1,83 @@
+.box-layout {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+
+body, #wrapper {
+    width: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+main {
+    background-color: #abbfbf;
+    width: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+img {
+    width: 7em;
+    height: 7em;
+    padding: 0.8px;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Baloo Bhaina', cursive;
+    text-shadow: 2px 2px #00aa3c;
+    margin: 0 auto;
+    float: left;
+}
+
+span{
+    margin: 0 auto;
+}
+
+footer{
+    text-align: center;
+}
+
+.divdiv {
+    float: left;
+    position: relative;
+}
+
+.bgbild{
+    float: left;
+    position: absolute;
+    padding: 0;
+    z-index: 1000;
+    background: url(flippedimg.png) no-repeat;
+    background-size: contain;
+    color: #FFFFFF;
+    font-weight: bold;
+    width: 7.2em;
+    height: 8em;
+    opacity: 1;
+    transition: opacity 0.25s ease-in;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+img#academylogo {
+    width: 250px;
+    height: 100px;
+    float: left;
+}

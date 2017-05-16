@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>SudokuSolver</title>
+    <LINK href="styles.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+    <p th:each="i: ${#numbers.sequence(0, 8)}">
+      <span th:each="j: ${#numbers.sequence(0, 8)}"
+            th:text="${box[i][j]} + ', '"></span>
+    </p>
+</body>
+</html>

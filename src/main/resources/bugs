@@ -1,0 +1,4 @@
+
+-- Styr upp att man inte kan ladda om sidan när man lagt ett helt soduko
+
+-- fixa alla strängar på icke fyllda properties när man vill ha ledtråd
