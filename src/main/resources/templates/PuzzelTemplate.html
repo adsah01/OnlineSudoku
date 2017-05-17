@@ -5,7 +5,10 @@
     <title>Title</title>
     <link href="styles.css" rel="stylesheet" type="text/css"/>
 </head>
+
 <body>
+<div id="wrapper">
+    <h1>SudokuHinter</h1>
     <main>
         <form th:action="updatedPuzzel" method="POST">
             <input class="box-layout" type="text" id="digitOne" th:value="${box.digitOne}" name="digitOne"/>
@@ -96,5 +99,6 @@
         </form>
     </main>
     <h1 th:text="${badBox}"></h1>
+</div>
 </body>
 </html>

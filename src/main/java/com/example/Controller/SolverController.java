@@ -2,10 +2,14 @@ package com.example.Controller;
 
 import com.example.Model.SudokuBox;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.validation.Valid;
+
 
 /**
  * Styr upp annoteringar sen!!
@@ -59,14 +63,22 @@ public class SolverController {
     }
 
     @PostMapping("/updatedPuzzel")
-    public ModelAndView sudokuToTest(@RequestParam String action, SudokuBox sudokuBox){
-        boolean resetBox = false;
+    public ModelAndView sudokuToTest(@RequestParam String action, @Valid SudokuBox sudokuBox, BindingResult bru){
+        if (bru.hasErrors()){
+            if(action.equals("Rensa brädet")){
+                resetBoxes(true);
+                return new ModelAndView("PuzzelTemplate")
+                        .addObject("box", returnSudokuBox(box));
+            }
+            return new ModelAndView("PuzzelTemplate")
+                    .addObject("badBox", "Check your box kid, it's not correct..")
+                    .addObject("box", sudokuBox);
+        }
         setSudokuBox(sudokuBox);
         markStartingDigits();
 
         if(action.equals("Rensa brädet")){
-            resetBox = true;
-            resetBoxes(resetBox);
+            resetBoxes(true);
             return new ModelAndView("PuzzelTemplate")
                     .addObject("box", returnSudokuBox(box));
         }
@@ -84,7 +96,7 @@ public class SolverController {
             }
         }
 
-        resetBoxes(resetBox);
+        resetBoxes(false);
         return new ModelAndView("PuzzelTemplate")
                 .addObject("badBox", "Check your box kid, it's not correct..")
                 .addObject("box", sudokuBox);
@@ -106,6 +118,7 @@ public class SolverController {
         boolean possibleSudoku = true;
         boolean possibleBox = true;
         boolean possibleRow = true;
+
         for(int i = 0; i < hintBox.length; i++){
             for(int j = 0; j < hintBox[i].length; j++){
                 if(hintBox[i][j] != 0){

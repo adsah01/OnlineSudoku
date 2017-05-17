@@ -1,11 +1,3 @@
-.box-layout {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    position: relative;
-    width: 20px;
-    height: 20px;
-}
-
 
 body, #wrapper {
     width: 100%;
@@ -21,10 +13,11 @@ body, #wrapper {
 main {
     background-color: #abbfbf;
     width: 250px;
-    margin: 0 auto;
+    margin: auto;
     padding: 10px;
     border-radius: 5px;
     position: relative;
+    top: 10px;
 }
 
 img {
@@ -39,8 +32,9 @@ h1 {
     text-align: center;
     font-family: 'Baloo Bhaina', cursive;
     text-shadow: 2px 2px #00aa3c;
-    margin: 0 auto;
-    float: left;
+    margin: auto;
+    position: relative;
+    top: 5px;
 }
 
 span{
@@ -51,33 +45,18 @@ footer{
     text-align: center;
 }
 
-.divdiv {
-    float: left;
-    position: relative;
-}
 
-.bgbild{
-    float: left;
-    position: absolute;
-    padding: 0;
-    z-index: 1000;
-    background: url(flippedimg.png) no-repeat;
-    background-size: contain;
-    color: #FFFFFF;
-    font-weight: bold;
-    width: 7.2em;
-    height: 8em;
-    opacity: 1;
-    transition: opacity 0.25s ease-in;
-}
-
-#wrapper {
+wrapper {
     display: flex;
     flex-direction: column;
 }
 
-img#academylogo {
-    width: 250px;
-    height: 100px;
-    float: left;
+
+
+.box-layout {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    position: relative;
+    width: 20px;
+    height: 20px;
 }

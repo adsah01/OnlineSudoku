@@ -1,90 +1,174 @@
 package com.example.Model;
 
+import com.example.CustomValidators.OneDigitOnly;
+import com.example.Enum.OneDigitOnlyType;
+
 /**
  * Created by Administrator on 2017-05-04.
  */
 public class SudokuBox {
-
+    //Fixa en bean validering för input data, bara siffror mellan 1-9
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitOne;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitTwo;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitThree;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFour;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFive;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSix;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSeven;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitEight;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitNine;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitTen;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitEleven;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitTwelve;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitThirteen;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFourteen;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFifteen;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSixteen;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSeventeen;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitEighteen;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitNineteen;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitTwenty;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitTwentyone;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitTwentytwo;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitTwentythree;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitTwentyfour;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitTwentyfive;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitTwentysix;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitTwentyseven;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitTwentyeight;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitTwentynine;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitThirty;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitThirtyone;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitThirtytwo;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitThirtythree;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitThirtyfour;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitThirtyfive;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitThirtysix;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitThirtyseven;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitThirtyeight;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitThirtynine;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitForty;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFortyone;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFortytwo;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFortythree;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFortyfour;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFortyfive;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFortysix;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFortyseven;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFortyeight;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFortynine;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFifty;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFiftyone;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFiftytwo;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFiftythree;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFiftyfour;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFiftyfive;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFiftysix;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFiftyseven;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFiftyeight;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitFiftynine;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSixty;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSixtyone;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSixtytwo;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSixtythree;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSixtyfour;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSixtyfive;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSixtysix;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSixtyseven;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSixtyeight;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSixtynine;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSeventy;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSeventyone;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSeventytwo;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSeventythree;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSeventyfour;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSeventyfive;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSeventysix;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSeventyseven;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSeventyeight;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitSeventynine;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitEighty;
+    @OneDigitOnly(value = OneDigitOnlyType.DIGIT, ignoreCase = true)
     private String digitEightyone;
 
     public SudokuBox(){
