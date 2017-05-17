@@ -34,7 +34,9 @@ h1 {
     text-shadow: 2px 2px #00aa3c;
     margin: auto;
     position: relative;
-    top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
 }
 
 span{
