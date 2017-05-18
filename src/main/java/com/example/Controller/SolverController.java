@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import javax.validation.Valid;
+import java.util.Random;
 
 
 @Controller
@@ -86,9 +87,8 @@ public class SolverController {
                             .addObject("box", returnSudokuBox(box));
                 }
 
-
                 return new ModelAndView("PuzzelTemplate")
-                        .addObject("box", returnHint());
+                            .addObject("box", returnHint());
             }
         }
 
@@ -140,8 +140,8 @@ public class SolverController {
                     }
                 }
             }
-        }return true;
-
+        }
+        return true;
     }
 
     public boolean possibleRow(int i, int j){
@@ -236,6 +236,7 @@ public class SolverController {
     }
 
     public boolean boxCondition(int x, int y, int n){
+
         int boxXOffset = ((int) x / 3) * 3;
         int boxYOffset = ((int) y / 3) * 3;
 
@@ -250,6 +251,7 @@ public class SolverController {
     }
 
     public boolean rowCondition(int x, int y, int num){
+
         for (int i = 0; i < box.length; i++) {
             if (box[i][y] == num) {
                 return false;
@@ -261,16 +263,20 @@ public class SolverController {
         return true;
     }
 
+    //Returns SudokuBox with a random places hint
     public SudokuBox returnHint(){
-
-        for(int i = 0; i < box.length; i++){
-            for(int j = 0; j < box[i].length; j++){
-                if(checkBox[i][j] == 0){
-                    hintBox[i][j] = box[i][j];
-                    return returnSudokuBox(hintBox);
-                }
+        Random rand = new Random();
+        int i = rand.nextInt(9);
+        int j = rand.nextInt(9);
+        while(true){
+            if(checkBox[i][j] == 0){
+                hintBox[i][j] = box[i][j];
+                return returnSudokuBox(hintBox);
             }
-        }return returnSudokuBox(checkBox);
+            i = rand.nextInt(9);
+            j = rand.nextInt(9);
+        }
+
     }
 
     public void setSudokuBox(SudokuBox sudokuBox){

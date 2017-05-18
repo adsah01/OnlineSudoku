@@ -1,4 +1,5 @@
 
--- Styr upp att man inte kan ladda om sidan när man lagt ett helt soduko
-
 --https://git.heroku.com/mighty-everglades-87680.git
+
+
+-- fixa hint metoden så att man kan välja vart man vill ha hint.
