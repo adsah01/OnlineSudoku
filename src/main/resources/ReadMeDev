@@ -2,4 +2,6 @@
 --https://git.heroku.com/mighty-everglades-87680.git
 
 
--- fixa hint metoden så att man kan välja vart man vill ha hint.
+[X] fixa hint metoden så att man kan välja vart man vill ha hint.
+
+[] fixa en bad box, alltså en box med indata som jämförs mot den korrekta
