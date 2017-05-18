@@ -181,7 +181,7 @@ public class SolverController {
     }
 
     public boolean checkCheckBox() {
-        boolean possibleSudoku = true;
+
         boolean possibleBox = true;
         boolean possibleRow = true;
 
@@ -194,9 +194,9 @@ public class SolverController {
             }
         }
         if (!possibleBox || !possibleRow) {
-            possibleSudoku = false;
+            return false;
         }
-        return possibleSudoku;
+        return true;
     }
 
     public boolean possibleBox(int i, int j) {
